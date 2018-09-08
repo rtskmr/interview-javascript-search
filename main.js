@@ -22,3 +22,23 @@ function showSearchResult(aval) {
         }
     }
 }
+
+// function displayChecked() {
+//     alert('clicked..')
+//     var checkbox = document.getElementById('check');
+//     if (checkbox.checked != true){
+//         alert("you need to be fluent in English to apply for the job");
+//     }
+// }
+function displayChecked (box) {
+    var chboxs = document.getElementsByName("choice4");
+    var vis = "none";
+    for(var i=0;i<chboxs.length;i++) { 
+        if(chboxs[i].checked){
+         vis = "block";
+            break;
+        }
+    }
+    document.getElementById(box).style.display = vis;
+
+}

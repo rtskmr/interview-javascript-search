@@ -21,18 +21,20 @@
     <div class="contentSection" id="hiddenDiv" style="display:none">
         <div class="LeftSideSection">
             <div class="search-container">
-                <input type="text" onkeyup="mySearchItem()" id="mySearchInput" placeholder="Search.." name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
+                <input type="text" id="mySearchInput" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search" onkeyup="mySearchItem()"></i></button>
             </div>
             <div id="myUL">
-                <input type="checkbox" id="1" name="choice1" value="1">Choice 1<br>
-                <input type="checkbox" id="2" name="choice2" value="2">Choice 2<br>
-                <input type="checkbox" id="3" name="choice3" value="3">Choice 3<br>
-                <input type="checkbox" id="4" name="choice4" value="4">Choice 4<br>
+                <input type="checkbox" id="check" name="choice1" value="1">Choice 1<br>
+                <input type="checkbox" id="check" name="choice2" value="2">Choice 2<br>
+                <input type="checkbox" id="check" name="choice3" value="3">Choice 3<br>
+                <input type="checkbox" id="check" name="choice4" value="4" onclick="displayChecked('div1')">Choice 4<br>
             </div>
         </div>
         <div class="RightSideSection">
-            Right Panel
+            <div id="div1" style="display:none">
+                <td>Clicked - Choice 4!</td>
+            </div>
         </div>
     </div>
 
