@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>test</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="main.js"></script>
+
+</head>
+
+<body>
+    <div class="mainDiv">
+        <select class="choiceDropDown" onchange="java_script_:showSearchResult(this.options[this.selectedIndex].value)">
+            <option value="Choice">Choice 1</option>
+            <option value="Choice">Choice 2</option>
+            <option value="Choice">Choice 3</option>
+            <option value="Choice">Choice 4</option>
+        </select>
+    </div>
+    <div class="contentSection" id="hiddenDiv" style="display:none">
+        <div class="LeftSideSection">
+            <div class="search-container">
+                <input type="text" onkeyup="mySearchItem()" id="mySearchInput" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+            <div id="myUL">
+                <input type="checkbox" id="1" name="choice1" value="1">Choice 1<br>
+                <input type="checkbox" id="2" name="choice2" value="2">Choice 2<br>
+                <input type="checkbox" id="3" name="choice3" value="3">Choice 3<br>
+                <input type="checkbox" id="4" name="choice4" value="4">Choice 4<br>
+            </div>
+        </div>
+        <div class="RightSideSection">
+            Right Panel
+        </div>
+    </div>
+
+</body>
+
+</html>

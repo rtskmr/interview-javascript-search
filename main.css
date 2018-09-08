@@ -1,0 +1,45 @@
+.mainDiv{
+    background-color: white;
+}
+.choiceDropDown{
+    width: 30%;
+}
+.contentSection{
+    width: 70%;
+    margin-top: 0.71rem;
+    background-color: #F8F8F8	;
+    border: 1px solid black;
+    height: 25rem;
+    
+}
+.LeftSideSection{
+    float: left;
+}
+.RightSideSection{
+    width: 30%;
+    float: right;
+}   
+input[type=text] {
+    border: 1px solid #ccc; 
+    background: #f1f1f1;
+    height: 1rem; 
+}
+.search-container {
+    float: left;
+}
+.search-container button:hover {
+    background: #ccc;
+  }
+.search-container button {
+    float: right;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .topnav .search-container button:hover {
+    background: #ccc;
+  }
+  
